@@ -55,7 +55,7 @@ public class CombinationSum1 {
             return;
         } 
        for (int i = counter; i < candidates.length ; i++) {
-        if(i > counter && candidates[i-1]==candidates[i])
+        if(i > counter || candidates[i-1]==candidates[i])
             continue;
         cur.add(candidates[i]);
         cs(i+1,candidates,total+candidates[i]);
