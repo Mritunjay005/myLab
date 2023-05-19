@@ -60,14 +60,10 @@ public class twoSum {
 	}
 	   return res;
 	}
-
-
 	
 	public static void main(String[]args) {
-		Integer[] num= {-1,0,1,1,2,4,6,6,7};
-		int target=6;
-	   // Arrays.asList(twoSum(num, target)).stream().forEach(n->System.out.println(n));\
-		//System.out.println(twoSum1(num, target).toString());
-		System.out.println(threeSum(num, target).toString());
+		Integer[] num= {1,2,4,6};
+		int target=5;
+	    Arrays.asList(twoSum(num, target)).stream().forEach(n->System.out.println(n));
 	}
 }
